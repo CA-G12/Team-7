@@ -1,18 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Quiz App</title>
-</head>
-<body>
+  </head>
+  <body type="module">
     <main>
-        <section id="home"></section>
-        <section id="question"></section>
-        <section id="score"></section>
+      <section id="home"></section>
+      <section id="question">
+        <p>Question <span class="amount"> 1 </span>of <span> 5</span></p>
+        <h1>JavaScript Quiz</h1>
+        <ul>
+          <li class="question-text">
+            How do you call a function named "myFunction"?
+          </li>
+          <li>
+            <input type="radio" name="answer" id="a"/>
+            <label for="a" id="a-text">myFunction() </label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="b" />
+            <label for="b" id="b-text">call function myFunction() </label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="c" />
+            <label for="c" id="c-text">call myFunction() </label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="d" />
+            <label id="d-text" for="d">None of the mentioned</label>
+          </li>
+        </ul>
+        <button class="btn">Next</button>
+      </section>
+      <section id="score"></section>
     </main>
-    <script src="script.js"></script>
-</body>
+    <script type="module" src="./script.js"></script>
+    <script type="module" src="./Data.js"></script>
+  </body>
 </html>
