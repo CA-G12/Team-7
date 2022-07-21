@@ -9,7 +9,36 @@
 </head>
 <body>
     <main>
-        <section id="home"></section>
+        <section id="home">
+            <h1>JavaScript Quiz</h1>
+            <div class="content">
+                <div class="content-box1" id="content-box1">
+                    <h2 >Highest Score</h2>
+                    <div class="result-score">
+                        <div class="name">
+                            <h3>Name</h3>
+                            <p id="namePlayer"></p>
+                        </div>
+                        <div class="score">
+                            <h3>Score</h3>
+                            <p>50</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box2">
+                    <h2 >Description</h2>
+                    <div class="description">
+                        <p>
+                            Quiz App is a web application that<br> allows the player to answer some <br>questions on JavaScript after entering<br> his/her name. In the end, he will be<br> able to check his score.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <form>
+                <input type="text" placeholder="user name" id="userName">
+                <button id="btn">Start the game!</button>
+            </form>
+        </section>
         <section id="question"></section>
         <section id="score"></section>
     </main>
