@@ -18,3 +18,40 @@ main {
     justify-content: center;
     align-items: center;
 }
+
+
+/* start section seocre */
+.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+}
+.score .box {
+background-color: var(--bg);
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+padding-top: 60px;
+padding-bottom: 60px;
+}
+.score .btn {
+    width: 100%;
+    background-color: var(--main-color);
+    border: 0;
+    height: 45px;
+    color: white;
+    border-bottom-right-radius: 6px ;
+    border-bottom-left-radius: 6px;
+    cursor: pointer;
+}
+#pl-name {
+    text-transform: capitalize;
+}
+.display {
+    display: none;
+}
+/* end section seocre */
+
