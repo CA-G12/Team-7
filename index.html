@@ -9,7 +9,40 @@
   </head>
   <body type="module">
     <main>
-      <section id="home"></section>
+      <section id="home">
+        <h1>JavaScript Quiz</h1>
+        <div class="content">
+          <div class="content-box1" id="content-box1">
+            <h2>Highest Score</h2>
+            <div class="result-score">
+              <div class="name">
+                <h3>Name</h3>
+                <p id="namePlayer"></p>
+              </div>
+              <div class="score">
+                <h3>Score</h3>
+                <p>50</p>
+              </div>
+            </div>
+          </div>
+          <div class="content-box2">
+            <h2>Description</h2>
+            <div class="description">
+              <p>
+                Quiz App is a web application that<br />
+                allows the player to answer some <br />questions on JavaScript
+                after entering<br />
+                his/her name. In the end, he will be<br />
+                able to check his score.
+              </p>
+            </div>
+          </div>
+        </div>
+        <form>
+          <input type="text" placeholder="user name" id="userName" />
+          <button id="btn">Start the game!</button>
+        </form>
+      </section>
       <section id="question">
         <p>Question <span class="amount"> 1 </span>of <span> 5</span></p>
         <h1>JavaScript Quiz</h1>
@@ -18,7 +51,7 @@
             How do you call a function named "myFunction"?
           </li>
           <li>
-            <input type="radio" name="answer" id="a"/>
+            <input type="radio" name="answer" id="a" />
             <label for="a" id="a-text">myFunction() </label>
           </li>
           <li>
@@ -37,6 +70,7 @@
         <button class="btn">Next</button>
       </section>
       <section id="score"></section>
+      <section id="question"></section>
     </main>
     <script type="module" src="./script.js"></script>
     <script type="module" src="./Data.js"></script>
