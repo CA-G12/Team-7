@@ -20,6 +20,65 @@ main {
     align-items: center;
 }
 
+#question {
+    background-color: var(--bg);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+
+#question p {
+    width: 100%;
+    height: 30px;
+    font-size: 0.8rem;
+    background-color: #D8DEFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 6px ;
+    border-top-left-radius: 6px;
+}
+#question p span {
+    padding: 0.3rem;
+}
+
+#question h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+#question ul {
+    height: 35vh;
+}
+
+#question ul li:not(.question-text) {
+    list-style: none;
+    padding: 0.5rem 0 0.5rem 0.3rem;
+    color: var(--question-color);
+}
+
+.question-text {
+    list-style: none;
+    font-weight: 800;
+}
+
+.btn {
+    width: 100%;
+    background-color: var(--main-color);
+    border: 0;
+    height: 45px;
+    color: white;
+    border-bottom-right-radius: 6px ;
+    border-bottom-left-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem
+}
 /* start section home  */
 #home{
 width: 55%;
