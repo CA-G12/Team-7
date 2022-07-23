@@ -160,3 +160,34 @@ padding: 15px;
 /* end section home  */
 
 
+/* start section score */
+.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    display: none;
+}
+.score .box {
+background-color: var(--bg);
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+padding-top: 60px;
+padding-bottom: 60px;
+}
+.score .btn {
+    width: 100%;
+    background-color: var(--main-color);
+    border: 0;
+    height: 45px;
+    color: white;
+    border-bottom-right-radius: 6px ;
+    border-bottom-left-radius: 6px;
+    cursor: pointer;
+}
+
+/* End section score */
+
