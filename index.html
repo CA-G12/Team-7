@@ -9,6 +9,7 @@
   </head>
   <body type="module">
     <main>
+      <!--Start of Homepage section-->
       <section id="home">
         <h1>JavaScript Quiz</h1>
         <div class="content">
@@ -43,34 +44,38 @@
           <button id="btn">Start the game!</button>
         </form>
       </section>
+      <!--End of Homepage section-->
+      <!--Start of Questions section-->
+      <div class="message fade-out">You should answer the question!</div>
       <section id="question">
-        <p>Question <span class="amount"> 1 </span>of <span> 5</span></p>
+        <p>Question <span class="amount"> 1 </span>of <span> 10</span></p>
         <h1>JavaScript Quiz</h1>
         <ul>
           <li class="question-text">
             How do you call a function named "myFunction"?
           </li>
           <li>
-            <input type="radio" name="answer" id="a" />
+            <input type="radio" name="answer" id="a" class="answers" />
             <label for="a" id="a-text">myFunction() </label>
           </li>
           <li>
-            <input type="radio" name="answer" id="b" />
+            <input type="radio" name="answer" id="b" class="answers" />
             <label for="b" id="b-text">call function myFunction() </label>
           </li>
           <li>
-            <input type="radio" name="answer" id="c" />
+            <input type="radio" name="answer" id="c" class="answers" />
             <label for="c" id="c-text">call myFunction() </label>
           </li>
           <li>
-            <input type="radio" name="answer" id="d" />
+            <input type="radio" name="answer" id="d" class="answers" />
             <label id="d-text" for="d">None of the mentioned</label>
           </li>
         </ul>
         <button class="btn">Next</button>
       </section>
+
+      <!--End of Questions section-->
       <section id="score"></section>
-      <section id="question"></section>
     </main>
     <script type="module" src="./script.js"></script>
     <script type="module" src="./Data.js"></script>
